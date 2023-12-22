@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  background-color: hsl(275, 100%, 97%);
+  background-image: url(assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+}
+
+main {
+  max-width: 500px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  padding: 2rem 2rem 3rem;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  display: flex;
+  align-items: center;
+}
+
+main h1 {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+h1 span {
+  margin-right: 1rem;
+}
+
+.content {
+  margin-top: 1.6rem;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: hsl(292, 42%, 14%);
+}
+
+.question:hover {
+  cursor: pointer;
+  color: hsl(292, 16%, 49%);
+}
+
+.question img:hover {
+  transform: scale(1.1);
+}
+
+.question span {
+  margin-left: 1rem;
+}
+
+.answer {
+  max-width: 90%;
+  margin-top: 0.6rem;
+  display: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: hsl(292, 16%, 49%);
+}
+
+.answer.active {
+  display: block;
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 576px) {
+  body {
+    background-image: url(assets/images/background-pattern-mobile.svg);
+  }
+  main {
+    padding: 1.6rem;
+  }
+}
